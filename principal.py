@@ -3,7 +3,6 @@ import tkinter as tk
 
 def mostrar_ingreso_producto(root):
     ventana = tk.Toplevel(root)
-    # ventana = tk.Tk()
     ventana.title("Ingreso:")
 
     tk.Label(ventana, text="Nombre de producto:").pack()
@@ -11,6 +10,10 @@ def mostrar_ingreso_producto(root):
     e_nombre.pack()
 
     tk.Label(ventana, text="Precio costo:").pack()
+    e_costo = tk.Entry(ventana, width=30)
+    e_costo.pack()
+
+    tk.Label(ventana, text="Margen de ganancia:").pack()
     e_costo = tk.Entry(ventana, width=30)
     e_costo.pack()
 
