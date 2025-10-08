@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from principal import mostrar_ingreso_producto
+from .producto_ingreso import mostrar_ingreso_producto
 
 
 def mostrar_menu():
@@ -14,3 +14,8 @@ def mostrar_menu():
     ).pack()
 
     root.mainloop()
+
+
+if __name__ == "__main__":
+    print("Menú es Main!")
+    mostrar_menu()
